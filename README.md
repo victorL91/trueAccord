@@ -6,10 +6,12 @@ Pre-requesite:
 - The latest version of Node installed on your machine. 
 node version >= 12
 
-- Typescript installed globally
+- `npm` must be installed on your machine
+
+- Typescript installed globally for easier use
 `npm install -g typescript`
 
-- Jest install globally for easier use
+- Jest installed globally for easier use
 `npm install -g jest`
 
 
