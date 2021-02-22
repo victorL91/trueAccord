@@ -53,12 +53,13 @@ My goal was first to have a working script tackling the more cases I could, then
 Next steps:
 
 If I had more time, I could have improved my testing:
-1) make it more thorough, I am testing one debt at a time but I could have tested a few using jest-each
-2) I could have made it more precise
+1) I would not have focused only on unit testing but would have set a proper end to end (E2E) testing. 
+2) make it more thorough, I am testing one debt at a time but I could have tested a few using jest-each
+(to test with another debt value, you can change it the index on line 6 of /test/index.test.ts)
+3) I could have made it more precise
 example: - check if next_payment_due_date if of type date instead of not null if there is some debt remaining
-3) refactoring: 
-example: - line 11 in src/formatDebt.ts I could have made it an external function to have my code look cleaner.
-4) I could have defined types for the expected result. 
+4) I could have defined the types of more variables I used.
+
 
 
 

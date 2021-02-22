@@ -23,10 +23,7 @@ const getData = async (): Promise<any> => {
 
 const main = async (): Promise<Array<any> | undefined> => {
     const { debts, paymentPlans, allPayments } = await getData();
-    console.log(
-        JSON.stringify({ debts, paymentPlans, allPayments })
-    )
-    return formatDebt(debts, paymentPlans, allPayments)
+    return debts.map((d: debtType) => formatDebt(d, paymentPlans, allPayments))
 }
 
 main().then(console.log).catch(console.error);

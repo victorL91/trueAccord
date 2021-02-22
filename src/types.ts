@@ -26,5 +26,5 @@ export type paymentType = {
 export type fullDebtType = debtType & {
     is_in_payment_plan: boolean,
     remaining_amount: number,
-    next_payment_due_date: string
+    next_payment_due_date: string | null
 }
