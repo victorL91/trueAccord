@@ -16,14 +16,13 @@ node version >= 12
 Commands:
 
 1) Installation
-- `yarn install`
+- `npm install`
 
 2) Run script
-- `yarn run`
+- `npm run run`
 
 3) Test
-- `yarn test`
-
+- `npm run test`
 
 Assumptions:
 
