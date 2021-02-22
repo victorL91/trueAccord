@@ -4,7 +4,8 @@
   "description": "take home",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "run": "npx ts-node index.ts"
   },
   "repository": {
     "type": "git",
@@ -17,8 +18,24 @@
   },
   "homepage": "https://github.com/victorL91/trueAccord#readme",
   "dependencies": {
+    "@types/jest": "^26.0.20",
     "axios": "^0.21.1",
     "ts-node": "^9.1.1",
     "typescript": "^4.1.5"
+  },
+  "devDependencies": {
+    "jest": "^26.6.3",
+    "ts-jest": "^26.5.1"
+  },
+  "jest": {
+    "transform": {
+      ".(ts|tsx)": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ]
   }
 }
